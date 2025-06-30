@@ -1,3 +1,13 @@
-# Playlist Prediction Project
+# Predicting Playlists
 
-We're taking a crack at using predictive modeling to generate personalized playlists for listening services like Spotify, Apple music, Youtube Music, etc. using a blend of familiar listener tracks and new song recommendations. We aim to: 1) create a model that can predict upcoming tracks in listener-curated playlists using the Spotify Million Playlist Dataset and 2) tweak this model to incorporate additional track-specific features that are not included in the dataset, such as genre, mood, or lyrical content. Hopefully, we end up with a model that can strike a balance between listeners' song picks and the "vibes" of the songs in their list.
+## Summary 
+A key challenge in music recommendation is suggesting songs that match the overall ‘vibe’ of a user’s playlist, which often includes hidden groupings to create a broader tone. Using collaborative and content-based filtering approaches, we built and compared recommendation models that use K-means clustering to predict missing tracks and suggest new songs that fit seamlessly into existing playlists.
+
+## Models 
+Model #0 (Baseline): Recommends songs that simply co-occurred with any song in the playlist, selecting 5 random songs from this pool.
+Model #1 (Co-occurrence Similarity): Obtains playlist-level co-occurrence patterns by analyzing how songs tend to appear together across many playlists. Uses K-means clustering on 75% of the playlist to group similar songs, then recommends 5 songs with the highest cosine similarity to the 75%-playlist’s co-occurrence clusters.
+Model #2 (Emotion Similarity): Extracts the emotional profile of playlists using an pre-existing natural language processing model (Distilbert) trained on the GoEmotions dataset. Uses K-means clustering of 75% of each playlist's songs based on emotional vectors, and then recommends 5 songs with the highest similarity to the 75%-playlist’s emotional clusters. 
+
+## Guide to the repository
+
+
