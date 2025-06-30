@@ -14,9 +14,9 @@ A key challenge in music recommendation is suggesting songs that match the overa
 
 /playlist_subset/freq/song_frequency_csv.gz: Includes the frequency counts for songs across playlists. 
 
-/playlist_subset/freq/song_frequency_csv.gz: Contains the frequency counts for songs across playlists. 
+/playlist_subset/lyrics/all_lyrics_final.gz: Consists of the lyrics extracted via the Genius API. 
 
-/playlist_subset/freq/song_frequency_csv.gz: Contains the frequency counts for songs across playlists. 
+/playlist_subset/lyrics/emo/lyrics_27_goemotions.csv.zip: Includes lyrics-derived extracted emotion vectors for songs. 
 
 *Scripts*  
 extract_lyrics.ipynb: Extracts lyrics for songs that appeared with the most frequency (>= 20 playlists) across the entire dataset. This is primarily completed via Genius.com using the python package LyricsGenius. 
