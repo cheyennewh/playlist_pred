@@ -9,7 +9,7 @@ A key challenge in music recommendation is suggesting songs that match the overa
 + Model #2 (Emotion Similarity): Extracts the emotional profile of playlists using an pre-existing natural language processing model (Distilbert) trained on the GoEmotions dataset. Uses K-means clustering of 75% of each playlist's songs based on emotional vectors, and then recommends 5 songs with the highest similarity to the 75%-playlist’s emotional clusters. 
 
 ## Guide to the repository
-*Files*
+*Files*  
 /playlist_subset/playlist_subset_*.csv.gz: Contains the playlist data. 
 
 /playlist_subset/freq/song_frequency_csv.gz: Includes the frequency counts for songs across playlists. 
