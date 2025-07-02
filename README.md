@@ -29,5 +29,7 @@ file_manipulation.ipynb: Computes descriptive statistics on the playlist dataset
 
 baseline_model.ipynb: Contains the code for Model #0 (Baseline), which generates recommendations based on pairwise song co-occurrences. 
 
+models_1and2.ipynb: Contains the code for Model #1 (Co-Occurrence cosine similarity and Model #2 (Emotion cosine similarity)..
+
 
 
